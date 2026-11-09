@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: docker.io/aboelnour007/nginx-app1:1.0
+          image: docker.io/aboelnour007/nginx-app1:2.0
           ports:
             - containerPort: 80
 ---
