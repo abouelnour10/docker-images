@@ -13,6 +13,12 @@ spec:
         - path:
             type: PathPrefix
             value: /app1
+      filters:
+        - type: URLRewrite
+          urlRewrite:
+            path:
+              type: ReplacePrefixMatch
+              replacePrefixMatch: /
       backendRefs:
         - name: nginx-app1-service
           port: 80
